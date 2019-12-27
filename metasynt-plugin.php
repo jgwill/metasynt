@@ -24,6 +24,8 @@
 //generate_after_entry_content
 //generate_after_content
 
+defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
+
 
 require_once (__DIR__ . '/metasynt.func.php');
 
