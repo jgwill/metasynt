@@ -31,31 +31,31 @@ add_action( 'generate_after_content','mes__mainview' );
 //@a add this before the title generate_before_content
 //add_action( ('generate_before_content'), 'mes__headerview' );
 
-function mes__mainview() { ?> 
-    <hr> This is the METASYNT MainView plugin initialized and ready for migrating the code in.
-    <hr>
-    <hr>
+function mes__mainview() { 
+    $dbg = get_option( 'dbg' );
+    
+    //-----------------------------------------
+    //WP Get Options
+    
+    $metasyntfields = get_option( ('metasyntfields'));
+    $metasynt_title = get_option( 'metasynt_title');
+    $metasynticonhtml = get_option( 'metasynticonhtml' );
+    
+    $noaccesshtml = get_option( 'noaccesshtml' );
+    //------------------------------------
+    
+    ?> 
+    <!-- MetaSynt HTML MainView Segment starting -->
+  <hr>
 <a name="metasynt">&nbsp; </a>
 
 
 <?php global $current_user;
       get_currentuserinfo();
 
-      $my_text = get_field("questions") ;
-echo $my_text . '<hr>';
 
-//-----------------------------------------
-//WP Get Options
+if ($dbg >0 ) print_r($metasyntfields );
 
-$metasyntfields = get_option( ('metasyntfields'));
-$metasynt_title = get_option( 'metasynt_title');
-$metasynticonhtml = get_option( 'metasynticonhtml' );
-
-$noaccesshtml = get_option( 'noaccesshtml' );
-//-----------------------------------------
-
-//print_r($metasyntfields );
-//echo '<hr>';
 
 //$debug = true;  ;
 // All that just if logged in
@@ -75,8 +75,8 @@ class="wp-block-atomic-blocks-ab-notice ab-font-size-18 ab-block-notice metasynt
     }
 
 echo '</div>';
-//----------------------- End model to PRINT OUT CONCEPT Field -----------------------------------------
-//-------------------------------------------------------------------------------------------------------
+//-------
+//-----------------------------------------
 }
 else 
 {

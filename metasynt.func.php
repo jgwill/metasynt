@@ -17,6 +17,7 @@ use Michelf\Markdown;
 * */
 function mes__field_as_markdown_if($field_name,$prehtml="",$posthtml="")
 {
+    $dbg = get_option( 'dbg' );
     
 $style_bg_col = get_option( 'style_bg_col');
 
