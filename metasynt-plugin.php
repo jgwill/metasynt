@@ -22,9 +22,10 @@
  *
  */
 //generate_after_entry_content
-add_action( 'generate_after_entry_content','mes__generate_after_entry_content' );  
+//generate_after_content
+add_action( 'generate_after_content','mes__mainview' );  
 
-function mes__generate_after_entry_content() { ?> 
+function mes__mainview() { ?> 
     <hr> This is the METASYNT Base plugin initialized and ready for migrating the code in.
     <hr>
 
