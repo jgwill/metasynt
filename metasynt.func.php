@@ -5,14 +5,23 @@
 //metasynt.config.php
 require_once (__DIR__ . '/metasynt.config.php');
 require_once (__DIR__ . '/php-markdown/Michelf/MarkdownExtra.inc.php');
+
 use Michelf\Markdown;
+
+
+
 
 //echo __DIR__ . '/metasynt.config.php';
 
 /* Read field data and convert markdown to HTML
- * */
+* */
 function mes__field_as_markdown_if($field_name,$prehtml="",$posthtml="")
 {
+    
+$style_bg_col = get_option( 'style_bg_col');
+
+$metasynt_field_html_tag = get_option( 'metasynt_field_html_tag');
+
 	dbgw("entering mes__field_as_markdown_if: " . $field_name );
 
 try {
