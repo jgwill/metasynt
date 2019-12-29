@@ -4,9 +4,9 @@
  */
 //metasynt.config.php
 require_once (__DIR__ . '/metasynt.config.php');
-require_once (__DIR__ . '/php-markdown/Michelf/MarkdownExtra.inc.php');
+ require_once (__DIR__ . '/php-markdown/Michelf/MarkdownExtra.inc.php');
 
-use Michelf\Markdown;
+ use Michelf\Markdown;
 
 
 

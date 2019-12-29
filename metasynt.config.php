@@ -1,7 +1,7 @@
 <?php
 
 add_option( 'metasynt_title',"Meta Synthesis Content" , false, true );
-$metasyntfields = array("context","issues","concepts","questions","hypothesis","methodology","results","research_use","contributions","references","goal","dtdue","current_reality","mmotacceptable","mmotanalyze","mmotplan","mmotfeedback","notes");
+$metasyntfields = array("context","issues","concepts","questions","hypothesis","methodology","results","research_use","limitations","contributions","references","goal","dtdue","current_reality","mmotacceptable","mmotanalyze","mmotplan","mmotfeedback","notes");
 $metasynturlinfo = 'http://guillaumeisabelle.com/r/metasynt/info' ; //@STCGoal Send not-logged in to that page for more info when ready...
 $metasynticon = '/ico/structural-24.png';
 $noaccessmsg = 'To access MetaSyst data, you must be logged in.';
