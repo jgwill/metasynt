@@ -1,0 +1,255 @@
+[
+    {
+        "key": "group_5dd1eed3b46dd",
+        "title": "SynthesisV1",
+        "fields": [
+            {
+                "key": "field_5dd1eed8a9ef1",
+                "label": "Context",
+                "name": "context",
+                "type": "textarea",
+                "instructions": "Where is this source? What is it where that is written? is that current reality?",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "new_lines": "",
+                "maxlength": "",
+                "placeholder": "",
+                "rows": ""
+            },
+            {
+                "key": "field_5dd1eeeca9ef2",
+                "label": "Issues",
+                "name": "issues",
+                "type": "textarea",
+                "instructions": "Problematic, reality, issues",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 6,
+                "new_lines": ""
+            },
+            {
+                "key": "field_5dd1ef0aa9ef3",
+                "label": "Concepts",
+                "name": "concepts",
+                "type": "textarea",
+                "instructions": "Describe concepts (framework related to a references or raw concept)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": ""
+            },
+            {
+                "key": "field_5dfffdcd5128c",
+                "label": "Questions",
+                "name": "questions",
+                "type": "textarea",
+                "instructions": "Questioning arising from that content",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 5,
+                "new_lines": ""
+            },
+            {
+                "key": "field_5dfff9720be2a",
+                "label": "Hypothesis",
+                "name": "hypothesis",
+                "type": "textarea",
+                "instructions": "Hypothesis are possible reality about this item that require experimentation for validation.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 4,
+                "new_lines": ""
+            },
+            {
+                "key": "field_5dd1ef1ba9ef4",
+                "label": "Methodology",
+                "name": "methodology",
+                "type": "textarea",
+                "instructions": "Methodology (Protocol, telescoped goal of the research, data collection and analysis)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 4,
+                "new_lines": ""
+            },
+            {
+                "key": "field_5dd1ef3ba9ef5",
+                "label": "Results",
+                "name": "results",
+                "type": "textarea",
+                "instructions": "Results obtained by this source",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 5,
+                "new_lines": ""
+            },
+            {
+                "key": "field_5dd1ef4aa9ef6",
+                "label": "Research Use",
+                "name": "research_use",
+                "type": "textarea",
+                "instructions": "Usage in my research",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 5,
+                "new_lines": ""
+            },
+            {
+                "key": "field_5e09271057cb5",
+                "label": "Limitations",
+                "name": "limitations",
+                "type": "textarea",
+                "instructions": "Limits the content has or that you observed",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 6,
+                "new_lines": ""
+            },
+            {
+                "key": "field_5e03a5774defd",
+                "label": "Contributions",
+                "name": "contributions",
+                "type": "textarea",
+                "instructions": "What will it contribute to in terms of knowledge (which is more in the research protocol thought - But might be research use of this as reference contribution would do?",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 4,
+                "new_lines": ""
+            },
+            {
+                "key": "field_5e025b9097429",
+                "label": "References",
+                "name": "references",
+                "type": "textarea",
+                "instructions": "Related references \/ Bibliography",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 12,
+                "new_lines": ""
+            },
+            {
+                "key": "field_5e02fb0d2d300",
+                "label": "Notes",
+                "name": "notes",
+                "type": "textarea",
+                "instructions": "annotation",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "side",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "field",
+        "hide_on_screen": [
+            "send-trackbacks"
+        ],
+        "active": true,
+        "description": "The goal is that each post I create have a meta-system I can use to scientifically and creatively describe my observation, concepts, issues, methodologies, intentions..."
+    }
+]
