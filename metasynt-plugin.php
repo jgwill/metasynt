@@ -104,7 +104,7 @@ mes__field_as_markdown_if("questions","","<hr>");
 //@STCGoal Feature displaying the Excerpt of the post - Simplify writting an abstract at one place
 add_action('excerpt_edit_pre','ms__inform__editing_excerpt'); //display to editor
 add_action( 'generate_after_entry_title','mes__after_title' );  //display in post
-add_action('generate_before_content','mes__b4content');
+add_action('generate_before_main_content','mes__b4content');
 
 function mes__after_title()
 {
