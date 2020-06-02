@@ -63,25 +63,12 @@ function mes__mainview() {
 // All that just if logged in
 if ($current_user->ID != 0 ) {
     if ($debug) echo '<h6>----------:) YOU ARE AUTHORIZED TO ACCESS META-SYSTEMIC DATA -----------</h6>';
-echo '<div 
-class="wp-block-atomic-blocks-ab-notice ab-font-size-18 ab-block-notice metasynt-block" >
-<div class="ab-notice-title metasynt-title">
-'.$metasynticonhtml.'
-<p>'.$metasynt_title .'</p>
-</div>
-';
-foreach ($metasyntfields as $f )
-{ 
-        mes__field_as_markdown_if($f);
 
-    }
-    
-echo '</div>';
-//-------
-//-----------------------------------------
+    ms__display_content();
 }
 else 
 {
+    ms__display_content();
     //HERE STUFF TO NOT LOGGED USER
     //
     echo $noaccesshtml;
@@ -91,6 +78,25 @@ else
 
 <?php }
 
+function ms__display_content()
+{    
+    echo '<div 
+    class="wp-block-atomic-blocks-ab-notice ab-font-size-18 ab-block-notice metasynt-block" >
+    <div class="ab-notice-title metasynt-title">
+    '.$metasynticonhtml.'
+    <p>'.$metasynt_title .'</p>
+    </div>
+    ';
+    foreach ($metasyntfields as $f )
+    { 
+            mes__field_as_markdown_if($f);
+
+        }
+        
+    echo '</div>';
+    //-------
+    //-----------------------------------------
+}
 
 function mes__headerview() { ?> 
     <hr> This is the METASYNT HeaderView plugin initialized and ready for migrating the code in.
