@@ -120,7 +120,7 @@ function mes__b4content()
 }
 function ms__inform__editing_excerpt()
 {
-    //echo "<hr>FILL OUT THE EXCERPT AS AN ABSTRACT OF WHAT IS IN THIS POST<hr>";
+    echo "<hr>You can hook in a plugin using :<b>excerpt_edit_pre</b> <hr>";
 }
 
 
