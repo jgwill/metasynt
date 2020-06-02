@@ -5,7 +5,7 @@
  * Plugin Name: MetaSynt
  * Plugin URI:  http://guillaumeisabelle.com/r/metasynt/plugin
  * Description: MetaSynthesis display
- * Version:     0.0.1
+ * Version:     0.0.2
  * Author:      Guillaume D.-Isabelle
  * Author URI:  http://guillaumeisabelle.com
  * License:     GPL-2.0+
@@ -98,5 +98,15 @@ function mes__headerview() { ?>
 
 <?php 
 mes__field_as_markdown_if("questions","","<hr>");
+
+//@STCGoal Feature displaying the Excerpt of the post - Simplify writting an abstract at one place
+add_action('edit_form_after_title','ms__inform__editing_excerpt');
+function ms__inform__editing_excerpt()
+{
+	echo "<hr>FILL OUT THE EXCERPT AS AN ABSTRACT OF WHAT IS IN THIS POST<hr>";
+}
+echo "<hr>Excerpt: ";
+echo the_excerpt();
+echo "<hr>HELLO<hr>";
 }
 /* mes__field_as_markdown_if("questions","","<hr>"); */
