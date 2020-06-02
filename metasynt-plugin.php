@@ -108,9 +108,14 @@ add_action('generate_after_entry_header','mes__b4content');
 function mes__b4content()
 {   
     echo "<hr>";
+    echo "<style>
+    .ms-excerpt-table{ max-width:755px;}
+    </style>";
+    echo '<table class="ms-excerpt-table"><tr class="ms-excerpt-tr"><td class="ms-excerpt-td">';
     echo "<!-- Except insert Start -->
     ".the_excerpt()."
     <!-- Except insert Ends --> ";//Display the Excerpt
+    echo "</td></tr></table>";
     echo "<hr>";
 }
 function ms__inform__editing_excerpt()
