@@ -106,9 +106,9 @@ add_action('excerpt_edit_pre','ms__inform__editing_excerpt'); //display to edito
 add_action( 'generate_after_entry_title','mes__b4content' );  //display in post
 function mes__b4content()
 {   
-    echo "<p>
+    echo "<!-- Except insert Start -->
           ".the_excerpt()."
-            </p>";//Display the Excerpt
+           <!-- Except insert Ends --> ";//Display the Excerpt
 }
 function ms__inform__editing_excerpt()
 {
