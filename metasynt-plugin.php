@@ -105,10 +105,8 @@ mes__field_as_markdown_if("questions","","<hr>");
 add_action('edit_form_after_title','ms__inform__editing_excerpt'); //display to editor
 add_action( 'generate_after_entry_title','mes__b4content' );  //display in post
 function mes__b4content()
-{
-    echo "<hr>Excerpt: ";
-    echo the_excerpt();
-    echo "<hr>HELLO<hr>";
+{    
+    echo the_excerpt(); //Display the Excerpt
 }
 function ms__inform__editing_excerpt()
 {
