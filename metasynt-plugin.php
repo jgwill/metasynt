@@ -55,10 +55,10 @@ function mes__mainview() {
 <?php global $current_user;
       get_currentuserinfo();
 
-
-if ($dbg >0 ) print_r($metasyntfields );
-
-
+      
+      if ($dbg >0 ) print_r($metasyntfields );
+      
+      
 //$debug = true;  ;
 // All that just if logged in
 if ($current_user->ID != 0 ) {
@@ -70,12 +70,12 @@ class="wp-block-atomic-blocks-ab-notice ab-font-size-18 ab-block-notice metasynt
 <p>'.$metasynt_title .'</p>
 </div>
 ';
-    foreach ($metasyntfields as $f )
-    { 
+foreach ($metasyntfields as $f )
+{ 
         mes__field_as_markdown_if($f);
 
     }
-
+    
 echo '</div>';
 //-------
 //-----------------------------------------
@@ -99,14 +99,20 @@ function mes__headerview() { ?>
 <?php 
 mes__field_as_markdown_if("questions","","<hr>");
 
+}
 //@STCGoal Feature displaying the Excerpt of the post - Simplify writting an abstract at one place
-add_action('edit_form_after_title','ms__inform__editing_excerpt');
+// add_action('edit_form_after_title','ms__inform__editing_excerpt');
+add_action( 'generate_before_content','mes__b4content' );  
+function mes__b4content()
+{
+    echo "<hr>Excerpt: ";
+    echo the_excerpt();
+    echo "<hr>HELLO<hr>";
+}
 function ms__inform__editing_excerpt()
 {
-	echo "<hr>FILL OUT THE EXCERPT AS AN ABSTRACT OF WHAT IS IN THIS POST<hr>";
+    echo "<hr>FILL OUT THE EXCERPT AS AN ABSTRACT OF WHAT IS IN THIS POST<hr>";
 }
-echo "<hr>Excerpt: ";
-echo the_excerpt();
-echo "<hr>HELLO<hr>";
-}
+
+
 /* mes__field_as_markdown_if("questions","","<hr>"); */
