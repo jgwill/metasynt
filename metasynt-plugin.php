@@ -100,9 +100,10 @@ function mes__headerview() { ?>
 mes__field_as_markdown_if("questions","","<hr>");
 
 }
+//---------------------------------------------------------------------------------
 //@STCGoal Feature displaying the Excerpt of the post - Simplify writting an abstract at one place
-// add_action('edit_form_after_title','ms__inform__editing_excerpt');
-add_action( 'generate_before_content','mes__b4content' );  
+add_action('edit_form_after_title','ms__inform__editing_excerpt');
+add_action( 'generate_after_title','mes__b4content' );  
 function mes__b4content()
 {
     echo "<hr>Excerpt: ";
