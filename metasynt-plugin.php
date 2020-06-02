@@ -71,7 +71,7 @@ else
     ms__display_content();
     //HERE STUFF TO NOT LOGGED USER
     //
-    echo $noaccesshtml;
+   // echo $noaccesshtml;
     //echo '<hr><h6>---- :( SORRY META-SYSTEMIC DATA IS NOT PUBLIC ----</h6><hr>';
 }
 ?>
