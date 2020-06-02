@@ -55,42 +55,48 @@ function mes__mainview() {
 <?php global $current_user;
       get_currentuserinfo();
 
-
-if ($dbg >0 ) print_r($metasyntfields );
-
-
+      
+      if ($dbg >0 ) print_r($metasyntfields );
+      
+      
 //$debug = true;  ;
 // All that just if logged in
 if ($current_user->ID != 0 ) {
     if ($debug) echo '<h6>----------:) YOU ARE AUTHORIZED TO ACCESS META-SYSTEMIC DATA -----------</h6>';
-echo '<div 
-class="wp-block-atomic-blocks-ab-notice ab-font-size-18 ab-block-notice metasynt-block" >
-<div class="ab-notice-title metasynt-title">
-'.$metasynticonhtml.'
-<p>'.$metasynt_title .'</p>
-</div>
-';
-    foreach ($metasyntfields as $f )
-    { 
-        mes__field_as_markdown_if($f);
 
-    }
-
-echo '</div>';
-//-------
-//-----------------------------------------
+    ms__display_content();
 }
 else 
 {
+    ms__display_content();
     //HERE STUFF TO NOT LOGGED USER
     //
-    echo $noaccesshtml;
+   // echo $noaccesshtml;
     //echo '<hr><h6>---- :( SORRY META-SYSTEMIC DATA IS NOT PUBLIC ----</h6><hr>';
 }
 ?>
 
 <?php }
 
+function ms__display_content()
+{    
+    echo '<div 
+    class="wp-block-atomic-blocks-ab-notice ab-font-size-18 ab-block-notice metasynt-block" >
+    <div class="ab-notice-title metasynt-title">
+    '.$metasynticonhtml.'
+    <p>'.$metasynt_title .'</p>
+    </div>
+    ';
+    foreach ($metasyntfields as $f )
+    { 
+            mes__field_as_markdown_if($f);
+
+        }
+        
+    echo '</div>';
+    //-------
+    //-----------------------------------------
+}
 
 function mes__headerview() { ?> 
     <hr> This is the METASYNT HeaderView plugin initialized and ready for migrating the code in.
@@ -99,14 +105,29 @@ function mes__headerview() { ?>
 <?php 
 mes__field_as_markdown_if("questions","","<hr>");
 
+}
+//---------------------------------------------------------------------------------
 //@STCGoal Feature displaying the Excerpt of the post - Simplify writting an abstract at one place
-add_action('edit_form_after_title','ms__inform__editing_excerpt');
+add_action('excerpt_edit_pre','ms__inform__editing_excerpt'); //display to editor
+add_action('generate_after_entry_header','mes__b4content');
+
+function mes__b4content()
+{   
+    echo "<hr>";
+    echo "<style>
+    .ms-excerpt-table{ max-width:755px;}
+    </style>";
+    echo '<table class="ms-excerpt-table"><tr class="ms-excerpt-tr"><td class="ms-excerpt-td">';
+    echo "<!-- Except insert Start -->
+    ".the_excerpt()."
+    <!-- Except insert Ends --> ";//Display the Excerpt
+    echo "</td></tr></table>";
+    echo "<hr>";
+}
 function ms__inform__editing_excerpt()
 {
-	echo "<hr>FILL OUT THE EXCERPT AS AN ABSTRACT OF WHAT IS IN THIS POST<hr>";
+    echo "<hr>You can hook in a plugin using :<b>excerpt_edit_pre</b> <hr>";
 }
-echo "<hr>Excerpt: ";
-echo the_excerpt();
-echo "<hr>HELLO<hr>";
-}
+
+
 /* mes__field_as_markdown_if("questions","","<hr>"); */

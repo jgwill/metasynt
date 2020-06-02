@@ -1,0 +1,23 @@
+{
+  "name": "metasynt",
+  "version": "0.0.2",
+  "description": "MetaSynt packaging",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgwill/metasynt.git"
+  },
+  "keywords": [
+    "metasynt",
+    "synthesis"
+  ],
+  "author": "Guillaume Descoteaux-Isabelle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jgwill/metasynt/issues"
+  },
+  "homepage": "https://github.com/jgwill/metasynt#readme"
+}
