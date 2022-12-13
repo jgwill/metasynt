@@ -1,0 +1,126 @@
+[
+    {
+        "key": "group_5d867c15099eb",
+        "title": "STCFields",
+        "fields": [
+            {
+                "key": "field_5d867c2209a9b",
+                "label": "Due",
+                "name": "duedate",
+                "type": "date_time_picker",
+                "instructions": "Set out Due date for the Goal",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "display_format": "Y-m-d H:i:s",
+                "return_format": "Y-m-d H:i:s",
+                "first_day": 1
+            },
+            {
+                "key": "field_5d867dc9d9580",
+                "label": "Current Reality",
+                "name": "current_reality",
+                "type": "textarea",
+                "instructions": "Describe current reality in relationship to the goal",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_5d867e7fd9582",
+                "label": "Acceptable result",
+                "name": "mmot_acceptable_result",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0,
+                "ui": 0,
+                "ui_on_text": "",
+                "ui_off_text": ""
+            },
+            {
+                "key": "field_5d867c5f09a9c",
+                "label": "Note",
+                "name": "note",
+                "type": "text",
+                "instructions": "Write a note on the goal",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5d867e3bd9581",
+                "label": "Parent Chart",
+                "name": "parent_chart",
+                "type": "relationship",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "400",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "stc"
+                ],
+                "taxonomy": "",
+                "filters": [
+                    "search",
+                    "post_type",
+                    "taxonomy"
+                ],
+                "elements": "",
+                "min": "",
+                "max": "",
+                "return_format": "object"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "stc"
+                }
+            ]
+        ],
+        "menu_order": 2,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "left",
+        "instruction_placement": "field",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]

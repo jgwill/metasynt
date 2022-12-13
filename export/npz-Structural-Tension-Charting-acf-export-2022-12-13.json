@@ -1,0 +1,217 @@
+[
+    {
+        "key": "group_5d8684432f1be",
+        "title": "Structural Tension Charting",
+        "fields": [
+            {
+                "key": "field_5d86844a122f3",
+                "label": "Goal",
+                "name": "goal",
+                "type": "wysiwyg",
+                "instructions": "Describe the end-result (What do you want to create?)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "goal-wrapper",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "delay": 0
+            },
+            {
+                "key": "field_5d868495122f4",
+                "label": "Due Date",
+                "name": "dtdue",
+                "type": "date_time_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "80",
+                    "class": "",
+                    "id": ""
+                },
+                "display_format": "Y-m-d H:i:s",
+                "return_format": "Y-m-d H:i:s",
+                "first_day": 1
+            },
+            {
+                "key": "field_5d8684b3122f5",
+                "label": "Current Reality",
+                "name": "current_reality",
+                "type": "wysiwyg",
+                "instructions": "What do you have in relationship to what you want? (note. not how it got to be that way but how it is)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "delay": 0
+            },
+            {
+                "key": "field_5d8685887e9b1",
+                "label": "Accountability",
+                "name": "accountability",
+                "type": "user",
+                "instructions": "Choose who is accountable for the delivery. (1 person by result even if many will do it)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "role": "",
+                "allow_null": 1,
+                "multiple": 0,
+                "return_format": "array"
+            },
+            {
+                "key": "field_5d86ebe45aa9b",
+                "label": "Content",
+                "name": "content",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "delay": 0
+            },
+            {
+                "key": "field_5d8c8a47a4d85",
+                "label": "MMOT Acceptable",
+                "name": "mmotacceptable",
+                "type": "true_false",
+                "instructions": "Is where you are acceptable",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0,
+                "ui": 0,
+                "ui_on_text": "",
+                "ui_off_text": ""
+            },
+            {
+                "key": "field_5d8c8a68a4d86",
+                "label": "MMOT Analyze",
+                "name": "mmotanalyze",
+                "type": "wysiwyg",
+                "instructions": "Analyse how it got to be acceptable or not",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "delay": 0
+            },
+            {
+                "key": "field_5d8c8a8ca4d87",
+                "label": "MMOT Plan",
+                "name": "mmotplan",
+                "type": "wysiwyg",
+                "instructions": "Plan for next time. Correction or institutionalization",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "delay": 0
+            },
+            {
+                "key": "field_5d8c8ab9a4d88",
+                "label": "MMOT Feedback",
+                "name": "mmotfeedback",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 2,
+                "new_lines": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ],
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ],
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "field",
+        "hide_on_screen": [
+            "permalink",
+            "the_content",
+            "excerpt",
+            "discussion",
+            "revisions",
+            "slug",
+            "author",
+            "format",
+            "send-trackbacks"
+        ],
+        "active": true,
+        "description": ""
+    }
+]

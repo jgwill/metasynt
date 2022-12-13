@@ -1,0 +1,132 @@
+[
+    {
+        "key": "group_5d976684568ff",
+        "title": "MMOTComment",
+        "fields": [
+            {
+                "key": "field_5d97669f1f5cd",
+                "label": "MMOTAcceptable",
+                "name": "mmotacceptable",
+                "type": "radio",
+                "instructions": "Is the evaluated result acceptable",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "1: Acceptable": "1: Acceptable",
+                    "0": "0",
+                    "-1: Unacceptable": "-1: Unacceptable"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "default_value": 0,
+                "layout": "horizontal",
+                "return_format": "value",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_5e039dd4100c5",
+                "label": "MMOT Trend",
+                "name": "mmottrend",
+                "type": "radio",
+                "instructions": "Tendency between last time evaluated",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "1:Getting Better": "1:Getting Better",
+                    "0:Stayed the Same": "0:Stayed the Same",
+                    "-1:Getting Worse": "-1:Getting Worse"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "default_value": 0,
+                "layout": "horizontal",
+                "return_format": "value",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_5e039d957640e",
+                "label": "MMOTAnalyze",
+                "name": "mmotanalyze",
+                "type": "textarea",
+                "instructions": "Analyze how it got to be that way",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 7,
+                "new_lines": ""
+            },
+            {
+                "key": "field_5e03a8dd5ded3",
+                "label": "MMOT Plan",
+                "name": "mmotplan",
+                "type": "textarea",
+                "instructions": "Plan for getting it the way that it is desired",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 5,
+                "new_lines": ""
+            },
+            {
+                "key": "field_5e03a8f85ded4",
+                "label": "MMOT Feedback",
+                "name": "mmotfeedback",
+                "type": "textarea",
+                "instructions": "A System to insure the plan will work",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 3,
+                "new_lines": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "comment",
+                    "operator": "==",
+                    "value": "all"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "The idea is an MMOT when commenting..."
+    }
+]
