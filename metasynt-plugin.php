@@ -86,13 +86,21 @@ function ms__display_content()
     '.$metasynticonhtml.'
     <p>'.$metasynt_title .'</p>
     </div>
-    ';
+';
+    try {
+	    if ( sizeof($metasyntfields) != 0 ) {
     foreach ($metasyntfields as $f )
     { 
             mes__field_as_markdown_if($f);
 
-        }
-        
+    }
+	    }
+       }
+
+//catch exception
+catch(Exception $e) {
+  echo 'Message: ' .$e->getMessage();
+} 
     echo '</div>';
     //-------
     //-----------------------------------------
